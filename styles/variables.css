@@ -1,1 +1,33 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-family: "PressStart2P", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --text-color: #00CC14;
+    --bg-color: #000;
+    --bg-image: url(../images/background.png);
+    --main-border: 1px solid var(var(--text-color));
+    --background-image: 
+    repeating-linear-gradient(
+      90deg, 
+      #000, 
+      #000 2px, 
+      transparent 2px, 
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg, 
+      #000, 
+      #000 2px, 
+      transparent 2px, 
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom, 
+      #007f0c 0.01%, 
+      #004306 100%
+    );
+}
+
+
+
+
