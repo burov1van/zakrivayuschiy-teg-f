@@ -165,7 +165,7 @@
   padding: 5px 10px;
   font-family: var(--second-family);
   font-size: 18px;
-  font-weight: 785;
+  font-variation-settings: var(--font-header-variation);
 }
 
 .section__card-img {
