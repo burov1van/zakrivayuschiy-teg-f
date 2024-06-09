@@ -206,7 +206,7 @@
   align-items: center;
   font-family: var(--font-family);
   font-size: 14px;
-  /* gap: 10px; */
+  gap: 5px;
   position: relative;
 }
 
@@ -220,7 +220,7 @@
   background: transparent;
   border: 2px solid transparent;
   cursor: pointer;
-  height: 36px;
+  height: 38px;
   transition: border-color 0.3s ease;
 }
 
@@ -230,10 +230,6 @@
 
 .card__icon-button:focus-visible {
   border-color: var(--text-color);
-}
-
-.card__icon-button:focus-visible {
-  outline: 2px solid var(--text-color);
 }
 
 .card__like-button {

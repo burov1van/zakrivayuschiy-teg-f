@@ -29,6 +29,7 @@
               data-theme="dark"
               class="theme-menu__button"
               disabled="true"
+              aria-label="Переключить на темную тему"
             >
               Темно
             </button>
@@ -39,12 +40,18 @@
               data-theme="auto"
               disabled
               class="theme-menu__button"
+              aria-label="Переключить на автоматическую тему"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="light"
+              class="theme-menu__button"
+              aria-label="Переключить на светлую тему"
+            >
               Светло
             </button>
           </li>
@@ -62,8 +69,9 @@
 
             <img
               class="section__card-img blur"
-              src="./images/card-image (1).jpg"
-              alt=""
+              src="./images/card-image-1.jpg"
+              alt="Девушка с зонтом на фоне магазина"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -128,8 +136,9 @@
 
             <img
               class="section__card-img brightness"
-              src="./images/card-image (2).jpg"
-              alt=""
+              src="./images/card-image-2.jpg"
+              alt="Люди в торговом центре"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -197,8 +206,9 @@
 
             <img
               class="section__card-img contrast"
-              src="./images/card-image (3).jpg"
-              alt=""
+              src="./images/card-image-3.jpg"
+              alt="Одинокий маяк в море"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -261,8 +271,9 @@
 
             <img
               class="section__card-img drop-shadow"
-              src="./images/card-image (4).jpg"
-              alt=""
+              src="./images/card-image-4.jpg"
+              alt="Орел летит в небе"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -330,8 +341,9 @@
 
             <img
               class="section__card-img grayscale"
-              src="./images/card-image (5).jpg"
-              alt=""
+              src="./images/card-image-5.jpg"
+              alt="Рекламная вывеска на фоне кустов"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -400,8 +412,9 @@
 
             <img
               class="section__card-img hue-rotate"
-              src="./images/card-image (6).jpg"
-              alt=""
+              src="./images/card-image-6.jpg"
+              alt="Силует девушки из цветов"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -467,8 +480,9 @@
 
             <img
               class="section__card-img invert"
-              src="./images/annie-spratt-MmVrTxvHJOY-unsplash.jpg"
-              alt=""
+              src="./images/card-image-7.jpg"
+              alt="Кусты травы"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -533,8 +547,9 @@
 
             <img
               class="section__card-img saturate"
-              src="./images/benjamin-cheng-tQqPITbZg88-unsplash.jpg"
-              alt=""
+              src="./images/card-image-8.jpg"
+              alt="Домик в лесу"
+              loading="lazy"
             />
           </div>
           <div class="section__card-text-container">
@@ -600,7 +615,7 @@
           class="footer__button button"
           type="button"
           onclick="window['save-dialog-id'].showModal()"
-          aria-controls="dialog-modal-id"
+          aria-controls="save-dialog-id"
         >
           <svg
             width="29"
@@ -1232,7 +1247,7 @@
       </div>
     </footer>
 
-    <dialog class="dialog" id="save-dialog-id" aria-labelledby="save-dialog">
+    <dialog class="dialog" id="save-dialog-id" aria-labelledby="dialog-name">
       <div class="dialog__inner">
         <div class="modal_text">
           <!-- <img class="dialog_img" src="./images/floppy.svg" alt="" /> -->
@@ -1873,7 +1888,6 @@
             class="button dialog__button"
             onclick="window['save-dialog-id'].close()"
             type="submit"
-            aria-controls="dialog-modal-id"
           >
             <span class="button__text">Ok</span>
           </button>
