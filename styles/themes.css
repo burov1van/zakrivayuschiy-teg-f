@@ -28,6 +28,8 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
+  --button-color: var(--text-color);
+  --text-shadow: #000;
 }
 
 :root.theme-light {
@@ -53,4 +55,6 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --button-color: var(--bg-color);
+  --text-shadow: #fff;
 }
