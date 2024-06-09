@@ -165,7 +165,7 @@
   padding: 5px 10px;
   font-family: var(--second-family);
   font-size: 18px;
-  font-variation-settings: var(--font-header-variation);
+  font-variation-settings: "wght" var(--font-var-title), "slnt" 0;
 }
 
 .section__card-img {
@@ -183,7 +183,7 @@
   padding: 24px;
   border: 1px solid var(--text-color);
   font-family: var(--second-family);
-  font-variation-settings: var(--font-variation);
+  font-variation-settings: "wght" var(--font-var-text), "slnt" 0;
   font-size: 18px;
   line-height: 21px;
   text-align: left;

@@ -31,6 +31,8 @@
   --button-color: var(--text-color);
   --text-shadow: #000;
   --font-header-variation: "wght" 785, "slnt" 0;
+  --font-var-text: 465;
+  --font-var-title: 785;
 }
 
 :root.theme-light {
@@ -59,4 +61,6 @@
   --button-color: var(--bg-color);
   --text-shadow: #fff;
   --font-header-variation: "wght" 700, "slnt" 0;
+  --font-var-text: 400;
+  --font-var-title: 700;
 }

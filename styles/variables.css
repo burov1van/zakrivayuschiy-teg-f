@@ -27,4 +27,6 @@
   --heart-color: #ff0000;
   --font-variation: "wght" 465, "slnt" 0;
   --font-header-variation: "wght" 785, "slnt" 0;
+  --font-var-text: 465;
+  --font-var-title: 785;
 }
