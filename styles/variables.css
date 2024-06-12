@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-family: "PressStart2P", sans-serif;
-  --second-family: "Inter", sans-serif;
+  --font-family: "PressStart2P", fantasy;
+  --second-family: "Inter", fantasy;
   --text-color: #00cc14;
   --bg-color: #000;
   --bg-image: url(../images/background.png);

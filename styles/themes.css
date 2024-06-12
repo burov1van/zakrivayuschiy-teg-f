@@ -6,8 +6,8 @@
 */
 
 :root.theme-dark {
-  --font-family: "PressStart2P", sans-serif;
-  --second-family: "Inter", sans-serif;
+  --font-family: "PressStart2P", fantasy;
+  --second-family: "Inter", fantasy;
   --text-color: #00cc14;
   --bg-color: #000;
   --bg-image: url(../images/background.png);
@@ -36,8 +36,8 @@
 }
 
 :root.theme-light {
-  --font-family: "PressStart2P", sans-serif;
-  --second-family: "Inter", sans-serif;
+  --font-family: "PressStart2P", fantasy;
+  --second-family: "Inter", fantasy;
   --text-color: #000;
   --bg-color: #fff;
   --bg-image: url(../images/background-l.png);
