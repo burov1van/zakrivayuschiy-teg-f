@@ -272,41 +272,47 @@
 
 .main-body {
   fill: var(--bg-color);
-  transition: fill 0.3s linear;
+  transition: fill 300ms linear;
 }
 
 .like-icon:hover .main-body {
   fill: var(--text-color);
-  transition-delay: 0.05s;
-  transition-duration: 0.3s;
+  transition: fill 300ms linear 50ms;
 }
 
 .like-icon:active .main-body {
   fill: var(--heart-color);
-  transition-delay: 0.05s;
-  transition-duration: 0.5s;
+  transition: fill 500ms linear 50ms;
 }
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-color);
+  transition: fill 300ms linear 50ms;
+}
+
 .core {
   fill: var(--bg-color);
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 300ms ease 50ms;
 }
 
 .like-icon:hover .core {
   fill: var(--text-color);
-  transition-delay: 0s;
-  transition-duration: 0.3s;
+  transition: fill 300ms ease 0ms;
 }
 
 .like-icon:active .core {
   fill: var(--core-color);
-  transition-delay: 0s;
-  transition-duration: 0.3s;
+  transition: fill 300ms ease 0ms;
 }
 
-.like-icon.is-liked .main-body,
-.like-icon.is-liked .core,
+.like-icon.is-liked .core {
+  fill: var(--heart-color);
+  transition: fill 0ms ease 0ms;
+}
+
 .like-icon.is-liked .contour {
   fill: var(--heart-color);
+  transition: fill 300ms ease-in 60ms;
 }
 
 .like-icon.is-liked:hover .main-body,
@@ -380,7 +386,7 @@
 @media (max-width: 400px) {
   .footer__button {
     flex-direction: column;
-    gap: 15px;
+    gap: 11px;
     width: 306px;
     height: 84px;
   }
@@ -427,16 +433,20 @@
   .floppy-img {
     width: 28px;
     height: 28px;
-    fill: red;
   }
 }
 
 .dialog {
-  padding: 31px;
+  padding: 31px 26px;
   background-color: var(--bg-color);
   color: var(--text-color);
   border: 2px solid var(--text-color);
-  max-width: 357px;
+}
+
+@media (max-width: 400px) {
+  .dialog {
+    padding: 31px 36px;
+  }
 }
 
 .dialog__inner {
@@ -465,14 +475,20 @@
 }
 
 .dialog .floppy-img {
-  width: 39px;
-  height: 39px;
+  min-width: 39px;
+  min-height: 39px;
 }
 
 .dialog__button {
   height: 38px;
   width: 293px;
   text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+  .dialog__button {
+    width: 257px;
+  }
 }
 
 .dialog::backdrop {
