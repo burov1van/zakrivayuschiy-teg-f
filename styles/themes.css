@@ -5,6 +5,34 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+:root.theme-light {
+  --font-family: "PressStart2P", fantasy;
+  --second-family: "Inter", sans-serif;
+  --text-color: #000;
+  --bg-color: #fff;
+  --bg-image: url(../images/background-l.png);
+  --main-border: 1px solid var(var(--text-color));
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --button-color: var(--bg-color);
+  --text-shadow: #fff;
+  --font-var-text: 400;
+  --font-var-title: 700;
+}
+
 :root.theme-dark {
   --font-family: "PressStart2P", fantasy;
   --second-family: "Inter", sans-serif;
@@ -34,31 +62,33 @@
   --font-var-title: 785;
 }
 
-:root.theme-light {
-  --font-family: "PressStart2P", fantasy;
-  --second-family: "Inter", sans-serif;
-  --text-color: #000;
-  --bg-color: #fff;
-  --bg-image: url(../images/background-l.png);
-  --main-border: 1px solid var(var(--text-color));
-  --font-variation: "wght" 400, "slnt" 0;
-  --background-image: repeating-linear-gradient(
-      90deg,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --button-color: var(--bg-color);
-  --text-shadow: #fff;
-  --font-var-text: 400;
-  --font-var-title: 700;
+@media (prefers-color-scheme: dark) {
+  :root.theme-dark {
+    --font-family: "PressStart2P", fantasy;
+    --second-family: "Inter", sans-serif;
+    --text-color: #00cc14;
+    --bg-color: #000;
+    --bg-image: url(../images/background.png);
+    --main-border: 1px solid var(var(--text-color));
+    --background-image: repeating-linear-gradient(
+        90deg,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
+    --button-color: var(--text-color);
+    --text-shadow: #000;
+    --font-header-variation: "wght" 785, "slnt" 0;
+    --font-var-text: 465;
+    --font-var-title: 785;
+  }
 }

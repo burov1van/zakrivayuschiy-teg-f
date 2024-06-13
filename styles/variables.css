@@ -1,30 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
 :root {
   --font-family: "PressStart2P", fantasy;
   --second-family: "Inter", sans-serif;
-  --text-color: #00cc14;
-  --bg-color: #000;
-  --bg-image: url(../images/background.png);
+  --text-color: #000;
+  --bg-color: #fff;
+  --bg-image: url(../images/background-l.png);
   --main-border: 1px solid var(var(--text-color));
   --background-image: repeating-linear-gradient(
       90deg,
-      #000,
-      #000 2px,
+      #d3d3d3,
+      #d3d3d3 2px,
       transparent 2px,
       transparent 4px
     ),
     repeating-linear-gradient(
       0deg,
-      #000,
-      #000 2px,
+      #d3d3d3,
+      #d3d3d3 2px,
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
-  --button-color: var(--text-color);
-  --text-shadow: #000;
-  --core-color: #ff0000;
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --button-color: var(--bg-color);
+  --text-shadow: #fff;
+  --font-var-text: 400;
+  --font-var-title: 700;
   --heart-color: #ff0000;
-  --font-var-text: 465;
-  --font-var-title: 785;
+  --core-color: #ff0000;
 }
